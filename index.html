@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #ffe6e6;
+            color: #d63384;
+            margin: 0;
+            padding: 20px;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: inline-block;
+            margin-top: 50px;
+        }
+        h1 {
+            color: #c2185b;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #ff4081;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            font-size: 18px;
+        }
+        .btn:hover {
+            background-color: #d81b60;
+        }
+    </style>
+    <script>
+        function showInvitation() {
+            document.getElementById("invitation").style.display = "block";
+            document.getElementById("question").style.display = "none";
+        }
+    </script>
+</head>
+<body>
+    <div id="question" class="card">
+        <h1>Will You Be My Valentine?</h1>
+        <button class="btn" onclick="showInvitation()">Yes</button>
+        <a href="#" class="btn" style="background-color: #ccc;">No</a>
+    </div>
+    
+    <div id="invitation" class="card" style="display: none;">
+        <h1> Мөнхжин♥ Та валентины болзоонд уригдлаа!</h1>
+        <p><strong>Date:</strong> 2 сарын 14нд </p>
+        <p><strong>Time:</strong> Хайрийн хичээл тарахаар.</p>
+        <p><strong>Location:</strong> Хичээлийг тань тарахаар очиж авна.</p>
+      <p>Хайрт Мөнх-Оргил-оос♥</p>
+        <a href="#" class="btn">Excited!</a>
+    </div>
+</body>
+</html>
